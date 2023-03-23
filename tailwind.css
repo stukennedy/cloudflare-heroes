@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-button {
+  @apply btn rounded-sm bg-neutral-200 capitalize border-none text-neutral-800 font-normal hover:bg-secondary hover:text-neutral-50;
+}
+
+.hero-link {
+  @apply btn rounded-sm bg-secondary capitalize border-none text-neutral-50 text-xl font-normal hover:bg-black hover:text-white;
+}
+
+.hero-button {
+  @apply btn btn-sm rounded-md capitalize font-normal px-5 bg-neutral-200 border-none text-neutral-800 hover:bg-secondary hover:text-white;
+}

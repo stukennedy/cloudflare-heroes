@@ -1,0 +1,23 @@
+{
+  "name": "cloudflareheroes",
+  "version": "0.0.0",
+  "scripts": {
+    "tailwind:watch": "tailwind -i tailwind.css -o static/styles.css --watch",
+    "tailwind:build": "tailwind -i tailwind.css -o static/styles.css",
+    "start": "wrangler pages dev ./static --compatibility-date=2023-03-23",
+    "predeploy": "npm run tailwind:build",
+    "deploy": "wrangler pages publish ./static"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230321.0",
+    "daisyui": "^2.51.5",
+    "typescript": "^5.0.2",
+    "wrangler": "2.12.2"
+  },
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
+  }
+}
