@@ -10,6 +10,7 @@ export default (children: string) => {
     <link href="/styles.css" rel="stylesheet" />
     <script src="/htmx.min.js"></script>
     <script src="/_hyperscript.min.js"></script>   
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>  
   <body class="bg-white h-screen">
     <div class="flex justify-center pt-16">
