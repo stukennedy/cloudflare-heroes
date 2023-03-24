@@ -13,7 +13,7 @@ export default (hero: Hero) => /*html*/ `
         value="${hero.name}" 
         placeholder="Hero name"/>
     </div>
-    <a class="nav-button" href="/">go back</a>
+    <a class="nav-button" _="on click go back">go back</a>
     <button 
       class="nav-button"
       hx-patch="/heroes/${hero.id}" 
