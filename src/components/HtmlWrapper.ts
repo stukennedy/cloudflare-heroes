@@ -20,7 +20,7 @@ export default (children: string) => {
           <div><a class="nav-button" href="/heroes">Heroes</a></div>
         </nav>  
         ${children}
-        <div class="mt-8">
+        <div class="mt-4">
           <div id="messages" hx-post="/messages" hx-trigger="load"></div>
         </div>
       </div>

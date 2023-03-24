@@ -14,8 +14,8 @@ export const onRequestPost: PagesFunction = async () => {
 
 export const onRequestGet: PagesFunction = async () => {
   return html(/*html*/ `
-    <h2 class="text-2xl text-black text-center mb-4">Top Heroes</h2>
-    <div class="flex gap-8 p-4 mb-2" hx-post="/" hx-trigger="load">
+    <h2 class="text-2xl text-black text-center mb-3">Top Heroes</h2>
+    <div class="flex gap-8 p-4" hx-post="/" hx-trigger="load">
       Loading...
     </div>
     ${Search()}

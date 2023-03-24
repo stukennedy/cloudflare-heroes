@@ -20,11 +20,11 @@ export const onRequestPost: PagesFunction = async ({ request }) => {
 
 export const onRequestGet: PagesFunction = async () => {
   return html(/*html*/ `
-  <h2 class="text-2xl text-black mb-4">My Heroes</h2>
+  <h2 class="text-2xl text-black mb-2">My Heroes</h2>
 
   <form>
-    <label class="label text-black" for="new-hero">Hero name: </label>
-    <input class="border-black border w-full p-1 pl-2 text-neutral-800 text-sm mb-8 rounded-md" id="new-hero" name="name" />
+    <label class="label text-black mb-1 pl-0" for="new-hero">Hero name: </label>
+    <input class="border-neutral-500 border w-full p-2 text-neutral-800 text-sm mb-8 rounded-sm" id="new-hero" name="name" />
 
     <div 
       class="hero-button"
@@ -35,7 +35,7 @@ export const onRequestGet: PagesFunction = async () => {
     </div>
   </form>
 
-  <ul class="grid gap-2 mt-8" id="heroes-list" class="heroes" hx-post="/heroes" hx-trigger="load">
+  <ul class="grid gap-2 my-8" id="heroes-list" class="heroes" hx-post="/heroes" hx-trigger="load">
     Loading...
   </ul>
   `);

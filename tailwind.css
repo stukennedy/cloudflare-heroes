@@ -7,7 +7,7 @@
 }
 
 .hero-link {
-  @apply btn rounded-sm bg-secondary capitalize border-none text-neutral-50 text-xl font-normal hover:bg-black hover:text-white;
+  @apply btn rounded-sm bg-secondary capitalize border-none text-neutral-50 text-xl font-normal hover:bg-black hover:text-white h-14;
 }
 
 .hero-button {
