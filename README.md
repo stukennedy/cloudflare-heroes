@@ -44,7 +44,7 @@ This is just a function that accepts some `dom` string and returns the high leve
 ```typescript
 export default (children: string) => {
   const title = 'Tour of Heroes';
-  return /*html*/ `
+  return html`
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -89,11 +89,11 @@ In HTMX, all endpoints return HTML; not JSON data. This way the client doesn't n
 
 export const onRequestPost: PagesFunction = async () => {
   const title = await getTitle();
-  return fragment(/*html*/ `<h2>${title}</h2>`);
+  return fragment(html`<h2>${title}</h2>`);
 };
 
 export const onRequestGet: PagesFunction = async () => {
-  return html(/*html*/ `
+  return html(html`
     <h1>Welcome</h1>
     <div hx-post="/" hx-trigger="load">Loading title...</div>
   `);

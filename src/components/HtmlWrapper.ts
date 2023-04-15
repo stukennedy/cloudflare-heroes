@@ -1,6 +1,8 @@
+import { html } from '@lib/html';
+
 export default (children: string) => {
   const title = 'Tour of Heroes';
-  return /*html*/ `
+  return html`
 <!DOCTYPE html>
 <html lang="en">
   <head>

@@ -1,5 +1,7 @@
+import { html } from '@lib/html';
+
 export default () => {
-  return /*html*/ `
+  return html`
   <div id="search-component">
   <label class="label text-lg font-bold text-black" for="search-box">Hero Search</label>
   <input 

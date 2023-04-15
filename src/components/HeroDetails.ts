@@ -1,6 +1,7 @@
+import { html } from '@lib/html';
 import { Hero } from '@model/heroes';
 
-export default (hero: Hero) => /*html*/ `
+export default (hero: Hero) => html`
   <form>
     <h2 class="text-2xl text-black mb-4">${hero.name.toLocaleUpperCase()} Details</h2>
     <div class="text-black mb-1"><span>id: </span>${hero.id}</div>

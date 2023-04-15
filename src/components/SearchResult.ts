@@ -1,6 +1,7 @@
+import { html } from '@lib/html';
 import { Hero } from '@model/heroes';
 
-export default (hero: Hero) => /*html*/ `
+export default (hero: Hero) => html`
   <a href="/heroes/${hero.id}">
     <li class="
     border-neutral-800 

@@ -1,6 +1,7 @@
+import { html } from '@lib/html';
 import { Hero } from '@model/heroes';
 
-export default (hero: Hero) => /*html*/ `
+export default (hero: Hero) => html`
   <li class="w-56 relative cursor-pointer hover:left-0.5 flex">
     <div class="
         w-56 

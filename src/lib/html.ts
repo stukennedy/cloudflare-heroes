@@ -6,10 +6,12 @@ const INIT = {
   },
 };
 
-export const html = (dom: string) => {
+export const htmlResponse = (dom: string) => {
   return new Response(HtmlWrapper(dom), INIT);
 };
 
-export const fragment = (dom: string) => {
+export const fragResponse = (dom: string) => {
   return new Response(dom, INIT);
 };
+
+export const html = String.raw;

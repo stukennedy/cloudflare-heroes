@@ -1,6 +1,6 @@
 import Hero from '@components/Hero';
 import Messages from '@components/Messages';
-import { fragment, html } from '@lib/html';
+import { html, fragResponse, htmlResponse } from '@lib/html';
 import heroes from '@model/heroes';
 import messages from '@model/messages';
 
@@ -9,17 +9,17 @@ export const onRequestPut: PagesFunction = async ({ request }) => {
   const name = data.get('name') as string;
   const heroesData = await heroes.addHero(name);
   const allMessages = await messages.addMessage(`added hero: ${name}`);
-  return fragment(heroesData.map(Hero).join('') + Messages(allMessages));
+  return fragResponse(heroesData.map(Hero).join('') + Messages(allMessages));
 };
 
 export const onRequestPost: PagesFunction = async ({ request }) => {
   const heroesData = await heroes.getHeroes();
   const allMessages = await messages.addMessage('fetched heroes');
-  return fragment(heroesData.map(Hero).join('') + Messages(allMessages));
+  return fragResponse(heroesData.map(Hero).join('') + Messages(allMessages));
 };
 
 export const onRequestGet: PagesFunction = async () => {
-  return html(/*html*/ `
+  return htmlResponse(html`
   <h2 class="text-2xl text-black mb-2">My Heroes</h2>
 
   <form>
